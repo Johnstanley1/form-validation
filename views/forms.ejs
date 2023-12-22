@@ -1,0 +1,41 @@
+<%- include('layouts/header'); -%>
+<body class="body">
+    <%- include('layouts/nav'); -%>
+
+    <section class="w50">
+        <form class="formInfo" name="myform" method="Post" action="/" >
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="First and Last" autocomplete="on"><br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" placeholder="123-456-7890" autocomplete="on"><br><br><br>
+
+            <!-- <p>Order Below</p><br><br> -->
+
+            <label for="mangoJuice">Mango Juice - &dollar;2.99</label>
+            <input type="number" id="quantity1" name="quantity1" placeholder="0" autocomplete="on" oninput=""><br><br>
+    
+            <label for="berryJuice">Berry Juice - &dollar;1.99</label>
+            <input type="number" id="quantity2" name="quantity2" placeholder="0" autocomplete="on" oninput=""><br><br>
+
+            <label for="appleJuice">Apple Juice - &dollar;2.49</label>
+            <input type="number" id="quantity3" name="quantity3" placeholder="0" autocomplete="on" oninput=""><br><br>
+
+            <input class="submit" type="submit" value="Submit">
+
+        </form>
+        <div class="errors">
+            <p id="errors">
+                <% if(typeof(errors)!== 'undefined'){
+                  for(var error of errors){
+                %>
+                <p><%= error.msg %></p>
+                <%  
+                }
+                }
+                %>
+            </p>
+        </div>
+    </section>
+</body>
+<%- include('layouts/footer'); -%>

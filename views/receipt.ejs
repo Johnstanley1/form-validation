@@ -1,0 +1,96 @@
+<%- include('layouts/header'); -%>
+<body class="body">
+    <%- include('layouts/nav'); -%>
+
+    <%
+    if(typeof(name)!= 'undefined'){
+    %>
+    <table class="info">
+        <tr>
+            <h2>Thank you for your orders</h2>
+            <p>Here are your details</p>
+        </tr>
+        <tr>
+          <th>Name:</th>
+          <td><%= name %></td>
+        </tr>
+
+        <tr>
+          <th>phone Number:</th>
+          <td><%= phone %></td>
+        </tr>
+  
+        <% if (prdQuantity1 > 0){ %>
+            <tr>
+                <th>Mango Juice:</th>
+                <td><%= prdct1 %></td>
+            </tr>
+            <tr>
+                <th>Quantity:</th>
+                <td><%= prdQuantity1 %></td>
+            </tr>
+            <tr>
+                <th>Unit Price:</th>
+                <td><%= unitPrice1 %></td>
+            </tr>
+            <tr>
+                <th>Sub Total:</th>
+                <td>$<%= total1 %></td>
+            </tr>
+            <% } %>
+            <% if (prdQuantity2 > 0) {%>
+                <tr>
+                    <th>Berry Juice:</th>
+                    <td><%= prdct2 %></td>
+                </tr>
+                <tr>
+                    <th>Quantity:</th>
+                    <td><%= prdQuantity2 %></td>
+                </tr>
+                <tr>
+                    <th>Unit Price:</th>
+                    <td><%= unitPrice2 %></td>
+                </tr>
+                <tr>
+                    <th>Sub Total:</th>
+                    <td>$<%= total2 %></td>
+                </tr>
+            <% } %>
+
+            <% if (prdQuantity3 > 0) {%>
+                <tr>
+                    <th>Apple Juice:</th>
+                    <td><%= prdct3 %></td>
+                </tr>
+                <tr>
+                    <th>Quantity:</th>
+                    <td><%= prdQuantity3 %></td>
+                </tr>
+                <tr>
+                    <th>Unit Price:</th>
+                    <td><%= unitPrice3 %></td>
+                </tr>
+                <tr>
+                    <th>Sub Total:</th>
+                    <td>$<%= total3 %></td>
+                </tr>
+            <% } %>
+
+        <tr>
+          <th>Tax:</th>
+          <td><%= tax %></td>
+        </tr>
+  
+        <tr>
+          <th>Total:</th>
+          <td><%= totalAfterTax %></td>
+        </tr>
+  
+      </table>
+     <%  
+      }
+      %>
+      
+    </div>
+</body>
+<%- include('layouts/footer'); -%>

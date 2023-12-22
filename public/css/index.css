@@ -1,0 +1,159 @@
+.body{
+    max-width: 1000px;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(241, 241, 241);
+}
+
+header{
+ text-align: center;
+}
+
+.top_menu{
+    background-color: #8c087a;
+    border: 3px solid white;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 10px;
+}
+
+.top_menu ul{
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+}
+
+.top_menu ul li{
+    display: inline-block;
+    width: 130px;
+}
+
+.top_menu ul li:hover{
+    background-color: #0781b2;
+}
+
+.top_menu ul li a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 0;
+    display: block;
+}
+
+input[type="submit"]{
+    width: 30%;
+    font-size: 20px;
+    background-color: #8c087a;
+    border: 3px solid white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    padding: 10px;
+    margin-right: 330px;
+}
+
+input[type="submit"]:active{
+    box-shadow: -4px -4px 0px #8c087a;
+}
+
+input{
+    padding: 12px;
+    float: right;
+    width: 180px;
+}
+
+label{
+    font-size: 17px;
+}
+
+.items th{
+    border: 2px solid black;
+}
+
+.items td{
+    border: 2px solid black;
+}
+
+.info td{
+    border: 2px solid black;
+}
+
+.receipt .items{
+    border: 2px solid black;
+    width: 600px;
+}
+
+.receipt .info{
+    border: 2px solid black;
+    width: 600px;
+}
+
+.errors{
+    color: red;
+    margin: 20px;
+}
+
+.formInfo{
+    margin: 15px;
+    padding-bottom: 60px;
+}
+
+.info{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 330px;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+.info td{
+    border: 2px solid black;
+    padding: 15px;
+}
+
+.info tr{
+    border: 2px solid black;
+    padding: 15px;
+}
+h2, p, h3{
+    text-align: center;
+}
+
+.allOrders{
+    margin-left: 100px;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.allOrders td{
+    border: 2px solid black;
+}
+
+.allOrders th{
+    border: 2px solid black;
+}
+
+.allOrder{
+    border-collapse: collapse;
+    width: auto;
+}
+
+.allOrder td, .allOrder th{
+    font-size: 17px
+}
+
+
+footer {
+    padding: 10px 0;
+    text-align: center;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-top: 2px solid #8c087a;
+}
